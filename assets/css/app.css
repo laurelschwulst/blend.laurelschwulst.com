@@ -38,7 +38,7 @@ nav#options a:hover {
   background: forestgreen;
 }
 
-body.home nav#otpions a:hover {
+body.blend nav#options a:hover {
   background: #fff;
 }
 
@@ -127,12 +127,12 @@ a.image {
   font-style: italic;
 }
 
-body.home {
+body.blend {
 	background: forestgreen;
 	height: 100%;
 	margin: 0;
 }
 
-body.home .images {
+body.blend .images {
 	height: 100%;
 }

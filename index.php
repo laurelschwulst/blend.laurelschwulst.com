@@ -21,7 +21,7 @@ for ($i = 0; $i < count($new_input); ++$i) {
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="assets/css/app.css" type="text/css">
   </head>
-  <body class="home">
+  <body class="blend">
 
     <nav id="options">
       <a href="index.php" class="current">Blend</a>
