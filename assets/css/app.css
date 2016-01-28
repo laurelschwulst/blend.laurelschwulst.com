@@ -11,12 +11,31 @@ html {
 body {
 	margin: 20px;
 	display: block;
-  background: forestgreen;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 1em;
 	font-weight: normal;
+}
+
+nav#options {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav#options a {
+  display: inline-block;
+  font-size: 12pt;
+  padding: 0.25em 0.5em;
+  margin: 0.125em;
+  background: #f0f0f0;
+  color: #000;
+  text-decoration: none;
+}
+
+nav#options a:hover {
+  background: forestgreen;
 }
 
 .images {
@@ -47,25 +66,23 @@ a.image {
 .pagination a,
 .pagination span {
 	display: inline-block;
-  font-size: 12pt;
-  padding: 2.5em 0.5em;
-  width: 2em;
-  margin: 0.125em;
-  /*background: #f0f0f0;*/
-  background: green;
-  color: #000;
-  text-decoration: none;
-  border-radius: 50%;
+    font-size: 12pt;
+    padding: 2.5em 0.5em;
+    width: 2em;
+    margin: 0.125em;
+    background: #f0f0f0;
+    color: #000;
+    text-decoration: none;
+    border-radius: 50%;
 }
 
 .pagination a:hover {
-    /*background: forestgreen;*/
-    background: lime;
+    background: forestgreen;
 }
 
-span.current {
-	background: transparent;
-  pointer-events: none;
+.current {
+	background: transparent !important;
+  pointer-events: none !important;
 }
 
 .display {

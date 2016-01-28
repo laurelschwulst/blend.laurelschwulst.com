@@ -26,11 +26,14 @@ $item = $arena->get_block($_GET['id']);
         <div class="stage" onclick="history.back()">
           
           <?php if($item->is_image()) { ?>
-            <a class='img' href="<?= $item->image_url('original') ?>">
+            <a class="image" href="<?= $item->image_url('original') ?>">
               <img src="<?= $item->image_url('display') ?>" />
             </a>
             <div class="title">
-              <h3><?= $item->generated_title ?></h3>
+              
+              <?php if (!($item->generated_title == ' ')): ?>
+                <h3><?= $item->generated_title ?></h3>
+              <?php endif; ?>
               <?= $item->description_html ?>
             </div>
           <?php } ?>
