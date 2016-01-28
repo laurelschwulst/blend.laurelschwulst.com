@@ -23,3 +23,5 @@ This is a simple image viewer for my Are.na channel of found images called [Blen
 + *todo* when i make the channel “private”, all the contents disappear. is there a way to make it private and still see the content?
 
 + *todo* eventually want to have two tabs within this site, one for videos and one for images. videos will have to be in a another channel.
+
++ *todo* consider making "blend" area with large images, not thumbnails
