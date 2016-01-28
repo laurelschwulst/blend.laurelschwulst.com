@@ -28,13 +28,13 @@ for ($i = 0; $i < count($new_input); ++$i) {
       <a href="catalog.php">Catalog</a>
     </nav>
 
-    <div class="images">
+    <div class="display">
+      <div class="theater">
+        <div class="stage">
       <?php foreach($selected_elements as $item) {?>
-            
+        
         <?php if($item->is_image()) { ?>
-          <a class="image" href="lightbox.php?id=<?= $item->id ?> ">
-            <img src="<?= $item->image_url('display') ?>" />
-          </a>
+          <img src="<?= $item->image_url('display') ?>" />
         <?php } ?>
 
         <?php if($item->is_embed()){ ?>
@@ -44,7 +44,8 @@ for ($i = 0; $i < count($new_input); ++$i) {
         <?php } ?>
 
       <?php } ?>
-
+    </div>
+    </div>
     </div>
 
   </body>

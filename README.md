@@ -6,7 +6,7 @@ This is a simple image viewer for my Are.na channel of found images called [Blen
 + index.php
 + this is always the splash page, or home page
 + always show just 4 random images from collection
-+ <s>todo: ideally clicking on an image would on click one) take you to lightbox view, click two) take you to where that image existed in the overall catalog</s>
++ <s>*todo*: ideally clicking on an image would on click one) take you to lightbox view, click two) take you to where that image existed in the overall catalog</s>
 
 ### Catalog
 + catalog.php
@@ -24,4 +24,6 @@ This is a simple image viewer for my Are.na channel of found images called [Blen
 
 + *todo* eventually want to have two tabs within this site, one for videos and one for images. videos will have to be in a another channel.
 
-+ *todo* consider making "blend" area with large images, not thumbnails
++ <s>*todo* consider making "blend" area with large images, not thumbnails</s>
+
++ *todo* cache images with json

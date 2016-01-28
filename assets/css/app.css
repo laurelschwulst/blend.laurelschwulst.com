@@ -136,3 +136,11 @@ body.blend {
 body.blend .images {
 	height: 100%;
 }
+
+body.blend .stage > img:first-child {
+  margin-top: 20px;
+}
+
+body.blend .stage > img:last-child {
+  margin-bottom: 20px;
+}
