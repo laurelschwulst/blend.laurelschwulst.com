@@ -30,7 +30,15 @@ $channel = $arena->get_channel($slug, array('page' => $page, 'per' => $per));
       <a href="catalog.php" class="current">Catalog</a>
     </nav>
     
-    <!-- pagination goes here -->
+    <div class="pagination">
+      <?php $channel->each_page($page, function($num, $current_page){ ?>
+        <?php if($num == $current_page){ ?>
+          <span class="current"><?= $num ?></span>
+        <?php }else{ ?>
+          <a href="?page=<?= $num ?>"><?= $num ?></a>
+        <?php } ?>
+      <?php }); ?>
+    </div>
 
     <div class="container">
 
@@ -62,7 +70,15 @@ $channel = $arena->get_channel($slug, array('page' => $page, 'per' => $per));
 
       <p class="ltb"></p>
 
-      <!-- pagination goes here -->
+      <div class="pagination">
+        <?php $channel->each_page($page, function($num, $current_page){ ?>
+          <?php if($num == $current_page){ ?>
+            <span class="current"><?= $num ?></span>
+          <?php }else{ ?>
+            <a href="?page=<?= $num ?>"><?= $num ?></a>
+          <?php } ?>
+        <?php }); ?>
+      </div>
 
     </div>
   </body>
