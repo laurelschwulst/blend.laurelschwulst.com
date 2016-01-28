@@ -9,8 +9,8 @@ This is a simple image viewer for my Are.na channel of found images. It's based 
 + todo: ideally clicking on an image would on click one) take you to lightbox view, click two) take you to where that image existed in the overall catalog
 
 ### index.php (also called "catalog")
-+ this always has a white background with pagination at top and bottom
-+ each page will always show 24 items per
++ this always has thumbnails with pagination at top and bottom
++ each page will show 24 items per
 + todo: right now it starts at page 1 (oldest), but i would like it to start at the last page
 
 ### lightbox.php
