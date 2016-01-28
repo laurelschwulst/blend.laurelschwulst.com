@@ -1,7 +1,8 @@
 <?php 
 
-ini_set('display_errors',1);
-error_reporting(-1);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 include 'arena.php';
 
@@ -29,39 +30,20 @@ $channel = $arena->get_channel($slug, array('page' => $page, 'per' => $per));
       <a href="catalog.php" class="current">Catalog</a>
     </nav>
     
-    <div class="pagination">
-      <?php $channel->set_sort_order($desc) ?>
-      <?php  if($channel->total_pages > 1){ ?><b>Pages: </b><? } ?>
-      <?php $channel->each_page($page, function($num, $current_page){ ?>
-        <?php if($num == $current_page){ ?>
-          <span class="current"><?= $num ?></span>
-        <?php }else{ ?>
-          <a href="?page=<?= $num ?>"><?= $num ?></a>
-        <?php } ?>
-      <?php }); ?>
-    </div>
+    <!-- put pagination back here -->
 
     <div class="container">
 
       <!-- start looping through channel items and provide each type of block -->
       <!-- (image, embed, link, text, attachment, channel) with a template -->
 
-      <!-- put it back here -->
+      <!-- put images div back here -->
 
       <!-- end channel loop -->
 
       <p class="ltb"></p>
 
-      <div class="pagination">
-        <?php  if($channel->total_pages > 1){ ?><b>Pages: </b><? } ?>
-        <?php $channel->each_page($page, function($num, $current_page){ ?>
-          <?php if($num == $current_page){ ?>
-            <span class="current"><?= $num ?></span>
-          <?php }else{ ?>
-            <a href="?page=<?= $num ?>"><?= $num ?></a>
-          <?php } ?>
-        <?php }); ?>
-      </div>
+      <!-- put pagination back here -->
 
     </div>
   </body>
