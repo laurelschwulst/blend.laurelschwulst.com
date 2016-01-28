@@ -46,26 +46,7 @@ $channel = $arena->get_channel($slug, array('page' => $page, 'per' => $per));
       <!-- start looping through channel items and provide each type of block -->
       <!-- (image, embed, link, text, attachment, channel) with a template -->
 
-      <div class="images">
-
-        <?php $channel->each_item(function($item) {?>
-            
-          <?php if($item->is_image()) { ?>
-            
-            <a class="image" href="lightbox.php?id=<?= $item->id ?> ">
-              <img src="<?= $item->image_url('display') ?>" />
-            </a>
-          <?php } ?>
-
-          <?php if($item->is_embed()){ ?>
-            <div class="video">
-              <?= $item->embed['html'] ?>
-            </div>
-          <?php } ?>
-
-      <?php }); ?>
-
-      </div>
+      <!-- put it back here -->
 
       <!-- end channel loop -->
 
