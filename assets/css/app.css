@@ -38,6 +38,10 @@ nav#options a:hover {
   background: forestgreen;
 }
 
+body.home nav#otpions a:hover {
+  background: #fff;
+}
+
 .images {
 	display: -webkit-flex;
     display: flex;
